@@ -66,12 +66,17 @@
 	  
 	  .team__item {
 		margin: 0 0 17px;
-	  
+	
 		&--active .team__link {
+			color: $yellow;
+		  }
+		
+	  
+		&--active .team__item {
 		  color: $yellow;
 		}
 	  
-		&--active .team__link::before {
+		&--active .team__item::before {
 		  transform: rotate(-180deg);
 		  color:$yellow;
 		}

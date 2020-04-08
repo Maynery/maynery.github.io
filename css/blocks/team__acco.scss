@@ -9,22 +9,24 @@
   margin-bottom: rem(40px);
   
   @include tablets {
-    margin-bottom: rem(30px);
+	margin-bottom: rem(30px);
+	
   }
+  &.active {
+	.team-acco__trigger {
+		color: $yellow;
+
+		&:before {
+			transform: rotate(-180deg);
+		}
+	}
+}
 
 	&:last-child {
 		margin-bottom: 0;
 	}
 
-	&.active {
-		.team-acco__trigger {
-			color: $yellow;
-
-			&:before {
-				transform: rotate(-180deg);
-			}
-		}
-	}
+	
 }
 
 .team-acco__trigger {
@@ -35,6 +37,7 @@
 	position: relative;
 	display: block;
 	margin-bottom: rem(20px);
+	
 
 	&:before, &:after {
 		content: "";

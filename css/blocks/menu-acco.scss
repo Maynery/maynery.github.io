@@ -29,10 +29,11 @@
   }
   
   .menu__item {
+	
 	display: flex;
 	height: 100%;
   
-	&--active {
+	&--active .menu__item{
 	  flex-grow: 0;
 	}
   

@@ -811,7 +811,7 @@ footer {
   display: flex;
   height: 100%;
 }
-.menu__item--active {
+.menu__item--active .menu__item {
   flex-grow: 0;
 }
 .menu__item--active .menu__content {
@@ -1361,7 +1361,10 @@ footer {
 .team__item--active .team__link {
   color: #f9b43b;
 }
-.team__item--active .team__link::before {
+.team__item--active .team__item {
+  color: #f9b43b;
+}
+.team__item--active .team__item::before {
   transform: rotate(-180deg);
   color: #f9b43b;
 }
@@ -1466,14 +1469,14 @@ footer {
     margin-bottom: 1.875rem;
   }
 }
-.team-acco__item:last-child {
-  margin-bottom: 0;
-}
 .team-acco__item.active .team-acco__trigger {
   color: #f9b43b;
 }
 .team-acco__item.active .team-acco__trigger:before {
   transform: rotate(-180deg);
+}
+.team-acco__item:last-child {
+  margin-bottom: 0;
 }
 
 .team-acco__trigger {
