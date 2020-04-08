@@ -1,0 +1,70 @@
+.menu-acco {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	
+	
+}
+
+.menu-acco__item {
+	float: left;
+	height: 100%;
+
+	&.active {
+		.menu-acco__trigger-text {
+			color: $yellow;
+		}
+	}
+}
+
+.menu-acco__trigger {
+	width: 80px;
+	display: block;
+	height: 100vh;
+	float: left;
+	
+	text-decoration: none;
+  position: relative;
+  
+ 
+}
+
+.menu-acco__trigger-text {
+	font-size: rem(40px);
+	color: #fff;
+	@include gagalin;
+	text-align: center;
+	white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  top: 100%;
+  margin-top: rem(-20px);
+
+  
+}
+
+.menu-acco__content {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0%;
+	background: rgba(#2f3234, .35);
+}
+
+.menu-acco__text {
+	@include ubuntu(light);
+	font-size: rem(14px);
+	color: #fff;
+	padding: rem(60px) rem(30px);
+	width: 100%;
+  line-height: 1.8;
+  display: none;
+
+  @include phones {
+    padding: rem(25px) rem(15px);
+  }
+}

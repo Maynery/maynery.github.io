@@ -1,0 +1,12 @@
+.menu {
+    height: 100vh;
+    width: 100%;
+    background: url('../img/menubg.jpg') 50% no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.menu__title {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}

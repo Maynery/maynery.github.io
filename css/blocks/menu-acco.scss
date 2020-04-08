@@ -1,0 +1,156 @@
+
+.menu__container {
+	display: flex;
+	flex-direction: column;
+	max-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+  
+	@include tablets {
+	  max-width: 740px;
+	}
+  }
+  
+  .menu__heading {
+	margin: 0;
+	padding: 92px 0 0 18px;
+  }
+  
+  .menu__list {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .menu__item {
+	display: flex;
+	height: 100%;
+  
+	&--active {
+	  flex-grow: 0;
+	}
+  
+	&--active .menu__content {
+	  width: 520px;
+	  padding: 60px 60px 0 30px;
+	  overflow: hidden;
+	  transition: width 0.5s ease-in-out;
+  
+	  @include tablets {
+		max-width: initial;
+		padding: 30px 20px 0;
+	  }
+  
+	  @include phones {
+		padding: 15px 15px 0;
+	  }
+	}
+  
+	&--active .menu__link {
+	  color:$yellow;
+	}
+  
+	&--active .menu__text {
+	  opacity: 1;
+	  transition: opacity 1s ease-in-out;
+	}
+  }
+  
+  .menu__link {
+	@include gagalin();
+	font-size: 42px;
+	display: block;
+	width: 80px;
+	height: 100%;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+  
+	&--meat {
+	 background:url('../img/menu/1.jpg');
+	 
+	}
+  
+	&--veg {
+	  background:url('../img/menu/2.jpg');
+	 
+	}
+  
+	&--diet {
+	  background:url('../img/menu/3.jpg');
+	 
+	}
+  }
+  
+  .menu__sub-heading {
+	display: block;
+	height: 100%;
+	padding: 40px 6px 0 10px;
+	writing-mode: tb-rl;
+	text-align: left;
+	transform: rotate(180deg);
+	color: #ffffff;
+  }
+  
+  .menu__content {
+	position: relative;
+	width: 0;
+	overflow: hidden;
+	font-weight: 300;
+	font-size: rem(14px);
+	background-color: rgba($dark-grey-blue, 0.93);
+  }
+  
+  .menu__text {
+	color:#ffffff;
+	@include ubuntu();
+    font-size: 14px;
+	opacity: 0;
+  }
+  
+  .menu__content-close {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+	display: none;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+  
+	&:hover {
+	  transform: scale(1.2);
+	}
+  
+	&::before,
+	&::after {
+	  content: "";
+	  position: absolute;
+	  width: 3px;
+	  height: 20px;
+	  background-color: rgba(#ffffff, 0.7);
+	  border-radius: 5px;
+	}
+  
+	&::before {
+	  transform: rotate(45deg);
+	}
+  
+	&::after {
+	  transform: rotate(-45deg);
+	}
+  
+	@include phones {
+	  display: block;
+	}
+  }

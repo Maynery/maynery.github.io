@@ -1,0 +1,13 @@
+.scrolldown {
+    position: absolute;
+    background: url('../../img/arrow-scroll.svg');
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0;
+}
+
+.scrolldown__icon {
+    border: 0;
+}
+ 

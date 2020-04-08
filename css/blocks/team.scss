@@ -1,0 +1,158 @@
+.team {
+	
+		background: url("../img/teem.jpg") 50% no-repeat;
+		background-size: cover;
+		position: relative;
+	
+  }
+  
+  .team__wrapper {
+	position: absolute;
+	left: 50%;
+	display: flex;
+	flex-direction: column;
+  
+	width: 50%;
+	height: 100%;
+	background-color: rgba($dark-grey-blue, 0.93);
+  
+	@include tablets {
+	  left: 0;
+	  justify-content: center;
+	  align-items: center;
+	  width: 100%;
+	}
+  }
+  .team__container {
+	width: 350px;
+	margin: 110px 0 0 100px;
+  
+	@include tablets {
+	  width: auto;
+	  margin: 0 0 0 5px;
+	}
+  }
+  
+  .team__heading {
+	display: flex;
+	@include gagalin();
+	font-size:rem(72px);
+	color: $yellow;
+	margin-bottom: 12%;
+	@include tablets {
+	  margin: 0 0 40px;
+	  text-align: center;
+	}
+	.team__container {
+		width: 350px;
+		margin: 110px 0 0 100px;
+	  
+		@include tablets {
+		  width: auto;
+		  margin: 0 0 0 5px;
+		}
+	  }
+	  
+	  @include phones {
+		margin: 0 0 10px;
+		font-size: rem(50px);
+		line-height: rem(50px);
+	  }
+	}
+	.team__list {
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  .team__item {
+		margin: 0 0 17px;
+	  
+		&--active .team__link {
+		  color: $yellow;
+		}
+	  
+		&--active .team__link::before {
+		  transform: rotate(-180deg);
+		  color:$yellow;
+		}
+	  
+		&--active .team__content {
+		  height: 123px;
+		  transition: height 0.5s ease-in-out;
+	  
+		  @include tablets {
+			height: 210px;
+		  }
+		}
+	  }
+	  .team__link {
+		@include gagalin();
+		font-size:rem(14px);
+		color:#ffffff;
+		display: block;
+		margin: 0 0 5px;
+		padding: 0;
+		text-decoration: none;
+	  
+		&::before {
+		  content: "";
+		  display: inline-block;
+		  width: 0;
+		  height: 0;
+		  margin: 0 10px 0 0;
+		  border-width: 7px 5px 0;
+		  border-style: solid;
+		  border-color: $yellow transparent transparent;
+		  transition-timing-function: ease-in-out;
+		  transition-duration: 0.5s;
+		  transition-property: transform;
+		}
+		@include tablets {
+			
+			text-align: center;
+		  }
+		}
+		
+		.team__content {
+			display: flex;
+			height: 0;
+			padding: 0 0 0 19px;
+			overflow: hidden;
+			transition: height 0.5s ease-in-out;
+		  
+			@include tablets {
+			  flex-direction: column;
+			  align-items: center;
+			  padding: 0;
+			}
+		  }
+		  .team__img {
+			width: 100px;
+			height: 100px;
+			margin: 5px 20px 0 0;
+			border-radius: 50%;
+		  
+			@include tablets {
+			  margin: 10px 8px 15px 0;
+			}
+		  }
+		  
+		  .team__text {
+			font-weight: 300;
+			font-size: rem(14px);
+		  
+			@include tablets {
+			  text-align: center;
+			}
+		  }
+		  
+		  .team__content-heading {
+			margin: 0 0 10px;
+			font-weight: 700;
+		  }
+		  
+		  .team__content-text {
+			margin: 0;
+			color: #ffffff;
+			@include ubuntu();
+		  }

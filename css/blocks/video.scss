@@ -1,0 +1,26 @@
+.video {
+    background: url('../img/bg/wework.jpg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+  
+    .container {
+      align-items: center;  
+    }
+  }
+  .player__controls{
+    display: flex;
+    height: 35px;
+    background-color: #3e3e3e;
+  }
+  .player__start {
+      display: flex;
+      background-color: #3e3e3e;
+      border: none;
+  }
+  .player__duration-completed{
+      color: #ffffff;   
+}
+
+.player__duration-estimate{
+    color:#ffffff
+}

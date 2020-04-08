@@ -1,0 +1,50 @@
+.burger-weight {
+ 
+	position: relative;
+	bottom: rem(100px);
+	left: 0;
+	
+
+	@include tablets {
+		top: 0;
+		right: 0;
+		bottom: auto;
+		left: auto;
+	}
+}
+
+.burger-weight__measure {
+	background: url('../icons/kkal.svg') 50% no-repeat;
+	width: rem(65px);
+	height: rem(60px);
+    position: static;
+    text-align: left;
+   
+  background-size: contain;
+  
+
+}
+
+.burger-weight__amount {
+    position: static;
+
+    
+	left: 0;
+	right: 0;
+	text-align: left;
+	color: white;
+	font-size: rem(20px);
+	@include gagalin();
+}
+
+.burger-weight__title {
+	text-align: left;
+	font-size: rem(14px);
+	color: #fff;
+    @include gagalin;
+    
+}
+.icons__slider {
+	fill:#ffffff;
+		
+}
