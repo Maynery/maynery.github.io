@@ -9,11 +9,12 @@
   }
   .player__controls{
     display: flex;
-    height: 35px;
+    height: rem(35px);
     background-color: #3e3e3e;
   }
   .player__start {
       display: flex;
+      height:rem(20px);
       background-color: #3e3e3e;
       border: none;
   }
